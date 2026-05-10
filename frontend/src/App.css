@@ -1,0 +1,171 @@
+.app {
+  min-height: 100vh;
+  padding: 32px;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  color: #94a3b8;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.live {
+  background: #16a34a;
+}
+
+.disconnected {
+  background: #dc2626;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.summary div {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.summary span {
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.summary strong {
+  font-size: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  color: #94a3b8;
+}
+
+.value {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 24px 0;
+}
+
+.value span {
+  font-size: 20px;
+  margin-left: 4px;
+  color: #94a3b8;
+}
+
+.online {
+  color: #22c55e;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.offline {
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0 24px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.panel {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.log {
+  padding: 10px 0;
+  border-bottom: 1px solid #1f2937;
+  color: #cbd5e1;
+}
+
+.log span {
+  color: #64748b;
+  margin-right: 12px;
+}
+
+.empty {
+  color: #94a3b8;
+}

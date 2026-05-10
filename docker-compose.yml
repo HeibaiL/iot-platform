@@ -1,0 +1,34 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+
+  backend:
+    build: ./backend
+    container_name: iot-backend
+    restart: unless-stopped
+    depends_on:
+      - mosquitto
+    ports:
+      - "3001:3001"
+
+  device-simulator:
+    build: ./device-simulator
+    container_name: device-simulator
+    restart: unless-stopped
+    depends_on:
+      - mosquitto
+
+  frontend:
+    build: ./frontend
+    container_name: iot-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+

@@ -1,0 +1,2 @@
+require("./sensor");
+require("./light");

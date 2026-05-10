@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.DS_Store
+
+frontend/node_modules
+backend/node_modules
+device-simulator/node_modules
+
