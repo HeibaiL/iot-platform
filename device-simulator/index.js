@@ -1,2 +1,1 @@
-require("./sensor");
 require("./light");

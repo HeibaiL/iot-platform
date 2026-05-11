@@ -7,6 +7,7 @@ type Device = {
   type: string;
   value?: string;
   unit?: string;
+  humidity?: string;
   state?: string;
   timestamp: number;
   online: boolean;
@@ -136,11 +137,19 @@ function App() {
             </div>
 
             {device.type === "temperature" && (
-              <div className="value">
-                {device.value}
-                <span>{device.unit}</span>
-              </div>
-            )}
+	 <>	
+          <div className="value">
+          {device.value}
+          <span>{device.unit}</span>
+         </div>
+
+         {device.humidity && (
+          <p className="small">
+          Humidity: {device.humidity}%
+          </p>
+          )}
+         </> 
+          )}
 
             {device.type === "light" && (
               <>
